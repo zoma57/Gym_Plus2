@@ -1,0 +1,398 @@
+@media (max-width: 1300px) {
+    .container {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    header nav {
+        padding: 10px 0;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .btn span {
+        font-size: 16px;
+    }
+
+    header nav .container .left {
+        width: 60%;
+    }
+
+    header nav .container .right label[for=burgerBtn] {
+        border: 2px solid var(--red);
+        border-radius: 5px;
+        width: 50px;
+        height: 40px;
+        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 0 8px;
+        cursor: pointer;
+    }
+
+    header nav .container .right label[for=burgerBtn] span {
+        content: "";
+        display: block;
+        background-color: var(--red);
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+    }
+
+    header nav .container .right .box {
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%);
+        transition-duration: .5s;
+    }
+
+    header nav .container .right input:checked+.box {
+        height: 375px;
+    }
+
+    header nav .container .right .box ul {
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    header>.container .content h1 {
+        font-size: 30px;
+    }
+
+    header>.container .content h4 {
+        font-size: 22px;
+    }
+
+    #Services .container .servicesContainer {
+        flex-wrap: wrap;
+    }
+
+    .title .bigTitle h2 {
+        font-size: 45px;
+    }
+
+    #Services .container .servicesContainer .service {
+        width: 100%;
+    }
+
+    #Services .container .servicesContainer .service .box {
+        height: auto;
+        max-width: 290px;
+        margin: auto;
+    }
+
+    #Classes .container .classContent .item {
+        width: 100%;
+    }
+
+    #Trainers .container .trainersContainer {
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    #Trainers .container .trainersContainer .trainer {
+        width: 100%;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerJobs {
+        font-size: 14px;
+    }
+
+    #Gallery .images {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(7,300px);
+        width: 60%;
+        min-width: 280px;
+        margin: auto;
+    }
+
+    #Gallery .images .cell:nth-of-type(1),
+    #Gallery .images .cell:nth-of-type(4) {
+        grid-row: span 1;
+    }
+
+    #FeedBack .container {
+        padding: 0 18px;
+    }
+
+    #FeedBack .container .blocks {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    #FeedBack .container .block {
+        width: 100%;
+    }
+
+    #FeedBack .container .block-info-row {
+        gap: 28px;
+    }
+
+    #Contact_us .container .content {
+        flex-direction: column-reverse;
+    }
+
+    #Contact_us .container .content .part2 {
+        margin-bottom: 30px;
+    }
+
+    #Contact_us .container .content .part1,
+    #Contact_us .container .content .part2 {
+        width: 100%;
+    }
+
+    #Contact_us .container .content .part2 .map iframe {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    header nav .container .left {
+        width:50%;
+    }
+
+    header>.container .content h1 {
+        font-size: 35px;
+    }
+
+    header>.container .content h4 {
+        font-size: 25px;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box {
+        width: 350px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    .btn {
+        padding:10px 20px;
+    }
+
+    .btn span {
+        font-size: 17px;
+    }
+    
+    header nav .container .left {
+        width: 30%;
+    }
+    
+    header nav .container .right .box ul {
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    header nav .container .right .box ul li {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header>.container .content h1 {
+        font-size: 45px;
+    }
+
+    header>.container .content h4 {
+        font-size: 30px;
+    }
+    
+    #Services .container .servicesContainer {
+        gap: 20px 0;
+    }
+
+    #Services .container .servicesContainer .service {
+        width: 50%;
+    }
+
+    #Services .container .servicesContainer .service .box {
+        max-width: 240px;
+    }
+
+    #Classes .container .classContent .item {
+        width: 100%;
+        margin: auto auto 50px;
+    }
+
+    #Trainers .container .trainersContainer .trainer {
+        margin: auto;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box {
+        max-width: 350px;
+        width: 95%;
+        margin: auto;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerJobs {
+        gap: 5px;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header nav .container .right .box ul {
+        justify-content:start;
+    }
+
+    header nav .container .right .box ul li {
+        width: calc(100% / 3);
+    }
+
+    header>.container .content h1 {
+        font-size: 50px;
+    }
+
+    header>.container .content h4 {
+        font-size: 30px;
+    }
+
+    #Services .container .servicesContainer .service {
+        width: calc(100% / 3);
+    }
+
+    #Services .container .servicesContainer .service .box {
+        max-width: 220px;
+    }
+
+    #Classes .container .classContent .item {
+        width: 50%;
+    }
+
+    #Trainers .container .trainersContainer {
+        gap: 25px 25px;
+        flex-wrap: wrap;
+    }
+
+    #Trainers .container .trainersContainer .trainer {
+        gap: 0;
+        width: 50%;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box {
+        width: auto;
+        margin: auto;
+    }
+
+    #Trainers .container .trainersContainer .trainer {
+        width: 45%;
+    }
+
+    #Gallery .images {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,300px);
+        width: initial;
+    }
+
+    #Gallery .images .cell:nth-of-type(1),
+    #Gallery .images .cell:nth-of-type(4) {
+        grid-row: span 2;
+    }
+
+    #FeedBack .container .blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    #FeedBack .container .block {
+        width: 50%;
+    }
+
+    #Contact_us form,
+    #Contact_us .container .content .part2 .map {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .btn {
+        padding:12px 24px;
+    }
+
+    .btn span {
+        font-size: 18px;
+    }
+
+    header nav .container .right label[for=burgerBtn] {
+        display: none;
+    }
+
+    header nav .container .right .box {
+        position: initial;
+        transform: initial;
+        height: max-content;
+        width: 100%;
+        transition: none;
+    }
+
+    header nav .container .right,
+    header nav .container .right .box {
+        overflow: hidden;
+        transition-duration: 0s;
+    }
+
+    header nav .container .right input:checked+.box {
+        height: max-content;
+    }
+
+    header nav .container .right .box ul {
+        flex-direction: row;
+        background-color: transparent;
+        border: none;
+        flex-wrap: nowrap;
+        transition: none;
+    }
+
+    header>.container .content h1 {
+        font-size: 55px;
+    }
+
+    #Services .container .servicesContainer .service .box {
+        max-width: 280px;
+    }
+
+    #FeedBack .container .block {
+        width: calc(100%/3);
+    }
+
+    #Contact_us .container .content {
+        flex-direction: row;
+    }
+
+    #Contact_us form {
+        width: 90%;
+    }
+
+    #Contact_us .container .content .part2 {
+        margin-bottom: 0;
+    }
+
+    #Contact_us .container .content .part1,
+    #Contact_us .container .content .part2 {
+        width: 50%;
+    }
+
+    #Contact_us .container .content .part2 .map {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}
